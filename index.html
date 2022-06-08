@@ -61,7 +61,7 @@
       </div>
     </nav>
 
-    <div class="container-fluid p-0 bg-secondary">
+    <div class="container-fluid p-0 bg-secondary main-body">
 
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
@@ -281,15 +281,15 @@
                   <p>
                       An ongoing personal project, this is a Virtual Reality drums simulator, which allows you to arrange your own drum kit and play, with the goal of making a responsive experience, keeping it as true-to-life as possible.
                   </p>
-                  <a href="https://andre-tm-hui.github.io/projects/vr-drum-sim">See More</a>
+                  <button type="button" class="btn btn-secondary" style="font-size: 14px; padding: 4px; background-color: #454545; color: #AAAAAA;" data-bs-toggle="modal" data-bs-target="#vrdrums">See More</button>
               </li>
               <li style="padding-bottom: 40px">
                   <h3>A Deepdive into Tetris AI</h3>
-                  <a href="files/y4_projectpaper.pdf" style="font-size:12px;">Github Link</a>
+                  <a href="https://github.com/andre-tm-hui/LearningTetris" style="font-size:12px;">Github Link</a>
                   <p>
                       A 4th Year Masters project, agents based on several different algorithms are tested on their ability to play NES Tetris.
                   </p>
-                  <a href="https://andre-tm-hui.github.io/projects/vr-drum-sim">See More</a>
+                  <a href="/files/y4_projectpaper.pdf">See More</a>
               </li>
               <li style="padding-bottom: 40px">
                   <h3>Hand Gesture Estimation Using a Convolutional Neural Network and a Single RGB Camera</h3>
@@ -301,15 +301,60 @@
               </li>
               <li style="padding-bottom: 40px">
                   <h3>Virtual Soundboard</h3>
-                  <a href="https://github.com/andre-tm-hui/LearningTetris" style="font-size:12px;">Github Link</a>
+                  <a href="https://github.com/andre-tm-hui/VirtualSoundboard" style="font-size:12px;">Github Link</a>
                   <p>
                       An ongoing personal project, this is a software-based audio soundboard. This is a fun project to help me learn C++, this project incorporates the portaudio and libsndfile libraries to create a program that records and plays back audio samples in real-time.
                   </p>
-                  <a href="https://andre-tm-hui.github.io/projects/virtual-soundboard">See More</a>
               </li>
           </ul>
         </div>
       </section>
+
+        <div class="modal fade" id="vrdrums" tabindex="-1" role="dialog" aria-labelledby="vrDrumSim" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content bg-secondary">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="vrDrumSim">VR Drum Simulator</h2>
+                        <button type="button" class="btn-close" style="color:#FFFFFF;" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            A virtual reality drumming simulator, designed to be as true-to-life as possible, with responsive interactions. This simulator includes:
+                        </p>
+                        <ul class="fa-ul mb-0">
+                            <li style="padding:3px">
+                                Assortment of kit parts: Snare, Kick, Hi-Hat, 2 Crashes, 3 Toms and a Ride Cymbal
+                            </li>
+                            <li style="padding:3px">
+                                Specific interactions including Rimshots on the snare, an alternate ride tone based on hit position and the ability to choke cymbals
+                            </li>
+                            <li style="padding:3px">
+                                Kit I/O: save and load different kit setups easily
+                            </li>
+                            <li style="padding:3px">
+                                Play your own music: play audio files in the game by placing audio files in a designated folder
+                            </li>
+                            <li style="padding:3px">
+                                MIDI I/O: connect the virtual kit to your DAW/plugin of choice (requires loopMIDI for Windows)
+                            </li>
+                            <li style="padding:3px">
+                                WIP: Analog kick and hi-hat pedal interactions, allowing control over their dynamics
+                            </li>
+                        </ul>
+
+                        <h3 style="padding-top: 40px">Future Additions:</h3>
+                        <ul class="fa-ul mb-0">
+                            <li style="padding:3px">
+                                MIDI follow-along: load a MIDI file corresponding to a song, and play along using visual indicators
+                            </li>
+                            <li style="padding:3px">
+                                Performance scoring: compare your own performance to a MIDI file to gauge your accuracy
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 
