@@ -142,3 +142,12 @@ tools-list {
 .progress-bar {
     background-color: #BD5D38;
 }
+
+.portfolio-item {
+    background-color: #2e2e2e;
+    box-sizing: border-box;
+    width: 95%;
+    height: 500px;
+    border-radius: 5%;
+    padding: 18px;
+}
