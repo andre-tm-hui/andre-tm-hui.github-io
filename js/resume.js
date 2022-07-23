@@ -36,8 +36,10 @@ function loadName() {
     setTimeout(loadName, 65);
 };
 
-$(document).ready(function () {
-    setTimeout(loadName, 200)
+$(window).load(function () {
+    // Animate loader off screen
+    $(".se-pre-con").fadeOut("slow");;
+    setTimeout(loadName, 500)
 });
 
 (function ($) {
