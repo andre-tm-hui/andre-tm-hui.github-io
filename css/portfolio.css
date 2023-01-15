@@ -1,0 +1,76 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 54px;
+    color: #ffffff;
+    background-color: #181818;
+    text-align: center;
+    margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+.navbar {
+    padding-inline: 5%;
+}
+
+.navbar-container {
+    max-width: 1080px;
+}
+
+.nav-home {
+    width: 64px;
+    height: 64px;
+    margin: -16px;
+}
+
+.navbar-brand {
+    padding-inline: 10px;
+}
+
+.nav-item {
+    font-size: 16px;
+    padding-inline: 10px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler:hover .navbar-toggler-custom-icon,
+.navbar-toggler:active .navbar-toggler-custom-icon {
+    color: #FFFFFFD0;
+}
+
+.navbar-toggler-custom-icon {
+    transition: color .1s ease-in;
+    color: #FFFFFF80;
+}
+
+.bg-nav {
+    background-color: #080808 !important;
+}
+
+.intro-section {
+    background-image: url(intro_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.intro-list {
+    list-style-type: none;
+    color: #808080;
+    font-size: 14px;
+    font-style: italic;
+    margin-left: -32px;
+}
