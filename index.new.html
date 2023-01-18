@@ -11,10 +11,10 @@
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
         <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
         <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
         <link href="css/portfolio.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/fd95051d04.js" crossorigin="anonymous"></script>
     </head>
 
     <body id="page-top">      
@@ -44,28 +44,64 @@
         </nav>
 
         <div class="contaner-flud p-0 main-body">
-            <section class="p-3 p-sm-5 row intro-section" id="intro">
-                <div class="col-12 col-sm-6 col-md-5 offset-md-2" style="text-align: left; padding-block: 5%;">
-                    <h4 style="margin: -10px; margin-left: 0px; color: #808080;">Hi! My name is</h4>
-                    <h1>Andre Hui</h1>
-                    <ul class="intro-list">
-                        <li>Durham CS graduate,</li>
-                        <li>Aspiring software engineer,</li>
-                        <li>Developer of ReVox,</li>
-                        <li>Contributor at CollAction</li>
-                    </ul>
+            <section class="intro-section" id="intro">
+                <div class="p-3 p-sm-5 row section-content">
+                    <div class="col-12 col-sm-6 col-md-5 offset-md-2" style="text-align: left; margin: auto;">
+                        <h4 style="margin: -5px; margin-left: 0px; color: #808080;">Hi! My name is</h4>
+                        <h1>Andre Hui</h1>
+                        <ul class="intro-list">
+                            <li>Durham CS graduate,</li>
+                            <li>Aspiring software engineer,</li>
+                            <li>Developer at <a href="https://collaction.org">CollAction</a></li>
+                            <li>Creator of <a href="https://github.com/andre-tm-hui/ReVox">ReVox</a>,</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3" style="text-align: right; margin: auto;">
+                        <img src="img/render.png" style="height: 280px;">
+                    </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-3" style="text-align: right;">
-                    <img src="img/render.png" style="height: 280px;">
+            </section>
+
+            <section class="section" id="highlights">
+                <div class="p-5 row section-content">
+                    <h2>Highlights</h2>
+                    <div class="carousel"s>
+                        <div class="item">
+                            test
+                        </div>
+                        <div class="item">
+                            test
+                        </div>
+                        <div class="item">
+                            test
+                        </div>
+                        <div class="item">
+                            test
+                        </div>
+                        <div class="item">
+                            test
+                        </div>
+                        <div class="item">
+                            test
+                        </div>
+                        <div class="item">
+                            test
+                        </div>
+                        <div class="carousel-button-container">
+                            <div class="carousel-button" id="carouselPrevious"><i class="fas fa-angle-left"></i></div>
+                            <div class="carousel-button" id="carouselNext"><i class="fas fa-angle-right"></i></div>
+                        </div>
+                    </div>
+                    <ul class="dots list-inline" id="carousel-dots"></ul>
                 </div>
-                
             </section>
         </div>
 
-        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+        <script src="js/portfolio.js"></script>
     </body>
 </html>
