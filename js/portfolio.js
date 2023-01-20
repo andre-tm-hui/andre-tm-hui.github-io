@@ -11,10 +11,10 @@ function carouselSet(newPosition) {
     // update the dots, text size
     if (items.length > 1) dots[current].classList.remove("selected-dot");
     items[current].classList.remove("curr");
+    items[current].style.setProperty("pointer-events", "none");
     current = newPosition < 0 ? items.length - 1 : newPosition % items.length;
     if (items.length > 1) dots[current].classList.add("selected-dot");
     items[current].classList.add("curr");
-    items[current].style.setProperty("pointer-events", "none");
 
     // move and update all items
     for (let i = 0; i < items.length; i++) {
