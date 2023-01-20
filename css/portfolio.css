@@ -1,13 +1,22 @@
 :root {
     --carousel-height: 400px;
-    --carousel-height-item-curr: 300px;
-    --carousel-height-item: 200px;
+    --carousel-image-height: 100%;
+    --curr-h3-size: 1.5em;
+    --bg-h3-size: 1.5em;
+    --curr-h4-size: 1em;
+    --bg-h4-size: 1em;
+    --curr-p-size: 0.75em;
+    --bg-p-size: 0.75em;
+    --curr-ul-size: 0.55em;
+    --bg-ul-size: 0.55em;
+    --align-about-text: right;
+    --align-contact-text: right;
 }
 
 body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-top: 54px;
-    color: #ffffff;
+    color: #A0A0A0;
     background-color: #181818;
     text-align: center;
     margin: auto;
@@ -72,6 +81,57 @@ h2 {
     background-color: #080808 !important;
 }
 
+.link-icon {
+    vertical-align: middle;
+    font-size: 30px;
+    color: #808080;
+}
+
+.link-icon:hover {
+    cursor: pointer;
+    color: #A0A0A0;
+}
+
+.link-button {
+    padding-inline: 3%;
+    margin-top: 2px;
+    vertical-align: middle;
+    font-size: 14px;
+    background-color: #009090;
+    height: 28px;
+    width: auto;
+    border-radius: 10px;
+}
+
+.link-button:hover {
+    background-color: #A0A0A0;
+}
+
+.link-button a {
+    vertical-align: middle;
+    color: #202020;
+    font-weight: 700;
+    font-family: 'Verdana';
+}
+
+.link-button a:hover {
+    color: #202020;
+}
+
+.button {
+    transition: all 0.3s ease-in-out;
+    margin: auto;
+    width: auto;
+    text-align: center;
+    border: 1px #303030 solid;
+    border-radius: 5px;
+    padding: 6px 20px 8px 20px;
+}
+
+.button:hover {
+    border-color: #00D0D0
+}
+
 .section {
     width: 100%;
 }
@@ -91,6 +151,10 @@ h2 {
     height: 100%;
 }
 
+.middle-section {
+    border-bottom: 1px solid #303030;
+}
+
 .intro-list {
     list-style-type: none;
     color: #808080;
@@ -101,7 +165,7 @@ h2 {
 
 a {
     transition: color .1s ease-in;
-    color: #B0B0B0;
+    color: #009090;
     text-decoration-line: none;
 }
 
@@ -112,58 +176,104 @@ a:hover {
 .carousel {
     user-select: none;
     margin-inline: auto;
-    width: 90%;
+    width: 100%;
     height: var(--carousel-height);
     overflow: hidden;
 }
 
-.item {
-    background-color: #00D0D0;
-    color: #000000;
+.item .row {
+    height: 100%; 
+    align-items: center;
 }
 
-.carousel .item {
+.img-container {
+    position: relative;
+    height: var(--carousel-image-height);
+}
+
+.img-container img {
     position: absolute;
     top: 50%;
     left: 50%;
-    transition: all 0.3s ease-in-out;
-    height: var(--carousel-height-item);
-    width: 400px;
-    overflow: hidden;
-    background-color: #00D0D0;
+    transform: translate(-50%, -50%); 
+    max-width: 90%;
+    max-height: 90%;
+    box-shadow: 0px 0px 10px 2px #303030;
+    margin: auto;
 }
 
 .item.curr {
-    height: var(--carousel-height-item-curr);
-    width: 100%;
-    max-width: 480px;
-    opacity: 1;
-    z-index: 99;
-    transform: translate(-50%, -50%);
+    cursor: pointer;
 }
 
-.item.prev {
-    opacity: 0.4;
-    z-index: 2;
-    transform: translate(-125%, -50%);
+.item.curr:hover {
+    transition: box-shadow 0.1s ease-in-out;
+    box-shadow: 0px 0px 10px 2px #808080;
 }
 
-.item.next {
-    opacity: 0.4;
-    z-index: 2;
-    transform: translate(25%, -50%);
+.item.curr h3 {
+    font-size: var(--curr-h3-size);
+    color: #D0D0D0;
 }
 
-.item.left {
-    opacity: 0;
-    z-index: 0;
-    transform: translate(-200%, -50%);
+.item h3 {
+    transition: all 0.5s ease-in-out;
+    font-size: var(--bg-h3-size);
+    color: #A0A0A0;
+    justify-content: center;
+    margin: 1%;
 }
 
-.item.right {
-    opacity: 0;
-    z-index: 0;
-    transform: translate(100%, -50%);
+.item.curr h4 {
+    font-size: var(--curr-h4-size);
+    color: #A0A0A0;
+}
+
+.item h4 {
+    transition: all 0.5s ease-in-out;
+    font-size: var(--bg-h4-size);
+    color: #808080;
+    justify-content: center;
+    margin: 1%;
+}
+
+.item.curr p {
+    font-size: var(--curr-p-size);
+    color: #808080
+}
+
+.item p {
+    transition: all 0.5s ease-in-out, color 0.1s;
+    font-size: var(--bg-p-size);
+    justify-content: center;
+    margin: 1%;
+    color: transparent;
+}
+
+.item.curr .tech-stack {
+    font-size: var(--curr-ul-size);
+    color: #505050;
+}
+
+.item .tech-stack {
+    transition: all 0.5s ease-in-out, color 0.1s;
+    font-size: var(--bg-ul-size);
+    margin: 1%;
+    color: transparent;
+}
+
+.carousel .item {
+    padding: 0%;
+    margin: 0%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: all 0.5s ease-in-out, box-shadow 0.1s ease-in-out;
+    height: var(--carousel-height-item);
+    overflow: hidden;
+    background-color: #202020;
+    box-shadow: 0px 0px 20px 5px #303030;
+    border-radius: 4px;
 }
 
 .carousel .carousel-button-container {
@@ -172,7 +282,8 @@ a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 85%;
-    z-index: 100;
+    z-index: 200;
+    pointer-events: none;
 }
 
 .carousel-button-container .carousel-button {
@@ -182,6 +293,7 @@ a:hover {
     position: relative;
     opacity: 0.5;
     transition: all 0.1s ease-in-out;
+    pointer-events: all;
 }
 
 .carousel-button-container .carousel-button:hover {
@@ -227,4 +339,73 @@ a:hover {
 
 .dot.selected-dot {
     color: #D0D0D0;
+}
+
+.about-description, .portrait {
+    text-align: var(--align-about-text);
+    margin: auto;
+    vertical-align: center;
+}
+
+.about-description h2, .contact-description h2 {
+    margin-block: 3%;
+}
+
+.portrait img {
+    width: 100%;
+}
+
+.contact-description {
+    text-align: var(--align-contact-text);
+    margin: auto;
+    vertical-align: center;
+}
+
+
+.form-button {
+    margin: auto;
+    transition: all .1s ease-in;
+    color: #B0B0B0;
+    border: 1px solid #303030;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 20px; 
+    width: 95%;
+}
+
+.form-button:hover {
+    border-color: #00D0D0;
+    color: #00D0D0;
+}
+
+.contact-field{
+    align-items: left;
+}
+
+.contact-field input, .contact-field textarea {
+    margin-block: 1%;
+    background-color: #303030;
+    color: #D0D0D0;
+    border: 0px;
+    border-radius: 5px;
+    padding: 2%;
+    padding-inline: 3%;
+}
+
+.contact-field input:focus, .contact-field textarea:focus {
+    outline: none;
+}
+
+.contact-field textarea {
+    width: 100%;
+}
+
+.contact-field input {
+    width: 100%;
+}
+
+.footer {
+    margin: auto;
+    padding: 2%;
+    color: #505050;
 }
