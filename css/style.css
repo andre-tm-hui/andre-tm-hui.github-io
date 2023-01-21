@@ -56,12 +56,13 @@ h2 {
     padding-inline: 10px;
 }
 
-.nav-item:hover {
-    background-color: #161616;
+.nav-item:hover .nav-link {
+    color: #E0E0E0 !important;
 }
 
-.nav-item.nav-selected {
-    background-color: #101010;
+.nav-item.nav-selected .nav-link {
+    color: #303030 !important;
+    pointer-events: none;
 }
 
 .navbar-toggler:focus,
@@ -101,10 +102,6 @@ h2 {
     align-items: center;
 }
 
-#navbarNav {
-    height: 100%;
-}
-
 .link-icon {
     vertical-align: middle;
     font-size: 30px;
@@ -135,7 +132,6 @@ h2 {
     vertical-align: middle;
     color: #202020;
     font-weight: 700;
-    font-family: 'Verdana';
 }
 
 .link-button a:hover {
@@ -158,6 +154,7 @@ h2 {
 
 .section {
     width: 100%;
+    padding: 5%;
 }
 
 .section-content {
@@ -170,4 +167,39 @@ h2 {
     margin: auto;
     padding: 2%;
     color: #505050;
+}
+
+@media (max-width: 576px) {
+    .section {
+        padding: 5% 2% 10% 2%;
+    }
+
+    .navbar-toggler {
+        margin-right: 0%;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        left: 0%;
+        top: 100%;
+        width: 100%;
+    }
+
+    .navbar-nav {
+        height: auto;
+    }
+
+    .nav-item {
+        width: 100%;
+    }
+
+    .nav-item a {
+        justify-content: center;
+        width: auto;
+        margin: auto;
+    }
+
+    .nav-item.nav-selected {
+        background-color: #505050;
+    }
 }

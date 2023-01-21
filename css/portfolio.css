@@ -1,6 +1,4 @@
 :root {
-    --carousel-height: 400px;
-    --carousel-image-height: 100%;
     --curr-h3-size: 1.5em;
     --bg-h3-size: 1.5em;
     --curr-h4-size: 1em;
@@ -9,12 +7,10 @@
     --bg-p-size: 0.75em;
     --curr-ul-size: 0.55em;
     --bg-ul-size: 0.55em;
-    --align-about-text: right;
-    --align-contact-text: right;
 }
 
 .intro-section {
-    margin-top: -60px;
+    margin-top: -5%;
     height: 100vh;
     background-image: url(intro_bg.png);
     background-position: center;
@@ -34,7 +30,7 @@
     user-select: none;
     margin-inline: auto;
     width: 100%;
-    height: var(--carousel-height);
+    height: 400px;
     overflow: hidden;
 }
 
@@ -45,7 +41,7 @@
 
 .img-container {
     position: relative;
-    height: var(--carousel-image-height);
+    height: 100%;
 }
 
 .img-container img {
@@ -126,7 +122,7 @@
     top: 50%;
     left: 50%;
     transition: all 0.5s ease-in-out, box-shadow 0.1s ease-in-out;
-    height: var(--carousel-height-item);
+    height: 100%;
     overflow: hidden;
     background-color: #202020;
     box-shadow: 0px 0px 20px 5px #303030;
@@ -200,7 +196,7 @@
 }
 
 .about-description, .portrait {
-    text-align: var(--align-about-text);
+    text-align: right;
     margin: auto;
     vertical-align: center;
 }
@@ -214,26 +210,29 @@
 }
 
 .contact-description {
-    text-align: var(--align-contact-text);
+    text-align: left;
     margin: auto;
     vertical-align: center;
 }
 
-
-.form-button {
+button {
     margin: auto;
     transition: all .1s ease-in;
     color: #B0B0B0;
     border: 1px solid #303030;
     border-radius: 5px;
     background-color: transparent;
-    font-size: 20px; 
-    width: 95%;
+    font-size: 1.2em; 
+    width: auto;
 }
 
-.form-button:hover {
+button:hover {
     border-color: #00D0D0;
     color: #00D0D0;
+}
+
+.form-button {
+    width: 95%;
 }
 
 .contact-field{
@@ -262,3 +261,25 @@
     width: 100%;
 }
 
+@media (max-width: 576px) {
+    .carousel {
+        height: 70vh;
+    }
+
+    .carousel .item {
+        height: 50%;
+    }
+
+    .img-container {
+        position: relative;
+        height: 50%;
+    }
+
+    .about-description, .portrait {
+        text-align: center;
+    }
+    
+    .contact-description {
+        text-align: center;
+    }
+}

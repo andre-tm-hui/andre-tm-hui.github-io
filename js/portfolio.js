@@ -23,8 +23,8 @@ function carouselSet(newPosition) {
         items[itemIndex].style.zIndex = Math.round(100 - carouselPositions[i][1] * 100);
         items[itemIndex].style.transform = "translate(" + (-50 + carouselPositions[i][0] * carouselRadius).toString() + "%, -50%)";
 
-        items[itemIndex].style.height = isSmall ? 90 * (1 - carouselPositions[i][1]) + "%" : 80 * (1 - carouselPositions[i][1]) + "%";
-        items[itemIndex].style.width = isSmall ? 90 * (1 - carouselPositions[i][1]) + "%" : 600 * (1 - carouselPositions[i][1]) + "px";
+        items[itemIndex].style.height = window.innerWidth < 576 ? 90 * (1 - carouselPositions[i][1]) + "%" : 80 * (1 - carouselPositions[i][1]) + "%";
+        items[itemIndex].style.width = window.innerWidth < 576 ? 90 * (1 - carouselPositions[i][1]) + "%" : 600 * (1 - carouselPositions[i][1]) + "px";
         items[itemIndex].style.opacity = 1 - carouselPositions[i][1];
     }
 
@@ -98,27 +98,6 @@ function initDots() {
 // Item generator using sql.js and an html template
 const itemTemplate = '';
 
-// Resize handling
-var isSmall = false;
-
-function onResize() {
-    // dynamically change carousel item height when window reaches the bootstrap sm width threshold
-    if (window.innerWidth <= 575) {
-        r.style.setProperty("--carousel-height", "70vh");
-        r.style.setProperty("--carousel-image-height", "50%");
-        r.style.setProperty("--align-about-text", "center");
-        r.style.setProperty("--align-contact-text", "center");
-        isSmall = true;
-    } else {
-        r.style.setProperty("--carousel-height", "400px");
-        r.style.setProperty("--carousel-image-height", "100%");
-        r.style.setProperty("--align-about-text", "right");
-        r.style.setProperty("--align-contact-text", "left");
-        isSmall = false;
-    }
-    carouselSet(current);
-}
-
 // Setup font-size for carousel
 function setupCarouselFont() {
     if (items.length <= 1) return;
@@ -140,12 +119,7 @@ $(function() {
 
     generateCarouselPositions();
     setupCarouselFont();
-    onResize();
     carouselSet(0);
-});
-
-$(window).on("resize", function() {
-    onResize();
 });
 
 $('#highlights').on("mousedown", (event) => {

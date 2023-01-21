@@ -90,7 +90,7 @@
     transition: all 0.2s ease-in-out;
     height: 100%;
     max-height: inherit;
-    max-width: inherit;
+    max-width: 150%;
     object-fit: contain;
     border-radius: 5px;
     filter: saturate(0.3);
@@ -128,7 +128,9 @@ a.disabled {
     }
 
     .item-description .tech-stack-list {
-        margin-top: 1% !important;
+        margin-block: 1% !important;
+        max-width: 100%;
+        text-align: center !important;
     }
 
     .item-container {
