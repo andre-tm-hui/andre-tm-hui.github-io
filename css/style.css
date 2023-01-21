@@ -1,0 +1,173 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 54px;
+    color: #A0A0A0;
+    background-color: #181818;
+    text-align: center;
+    margin: auto;
+}
+
+a {
+    transition: color .1s ease-in;
+    color: #009090;
+    text-decoration-line: none;
+}
+
+a:hover {
+    color: #00D0D0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    margin: auto;
+    color: #808080;
+}
+
+.navbar {
+    height: 60px;
+    padding: 0%;
+}
+
+.navbar-container {
+    height: 100%;
+    max-width: 1080px;
+}
+
+.nav-home {
+    width: 64px;
+    height: 64px;
+    margin: -16px;
+}
+
+.navbar-brand {
+    padding-inline: 10px;
+}
+
+.nav-item {
+    font-size: 16px;
+    padding-inline: 10px;
+}
+
+.nav-item:hover {
+    background-color: #161616;
+}
+
+.nav-item.nav-selected {
+    background-color: #101010;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler:hover .navbar-toggler-custom-icon,
+.navbar-toggler:active .navbar-toggler-custom-icon {
+    color: #FFFFFFD0;
+}
+
+.navbar-toggler-custom-icon {
+    transition: color .1s ease-in;
+    color: #FFFFFF80;
+}
+
+.bg-nav {
+    background-color: #080808 !important;
+}
+
+.navbar-nav {
+    height: 100%;
+    background-color: #080808;
+}
+
+.navbar-nav li {
+    height: 100%;
+    margin: auto;
+}
+
+.nav-link {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#navbarNav {
+    height: 100%;
+}
+
+.link-icon {
+    vertical-align: middle;
+    font-size: 30px;
+    color: #808080;
+}
+
+.link-icon:hover {
+    cursor: pointer;
+    color: #A0A0A0;
+}
+
+.link-button {
+    padding-inline: 3%;
+    margin-top: 2px;
+    vertical-align: middle;
+    font-size: 14px;
+    background-color: #009090;
+    height: 28px;
+    width: auto;
+    border-radius: 10px;
+}
+
+.link-button:hover {
+    background-color: #A0A0A0;
+}
+
+.link-button a {
+    vertical-align: middle;
+    color: #202020;
+    font-weight: 700;
+    font-family: 'Verdana';
+}
+
+.link-button a:hover {
+    color: #202020;
+}
+
+.button {
+    transition: all 0.3s ease-in-out;
+    margin: auto;
+    width: auto;
+    text-align: center;
+    border: 1px #303030 solid;
+    border-radius: 5px;
+    padding: 6px 20px 8px 20px;
+}
+
+.button:hover {
+    border-color: #00D0D0
+}
+
+.section {
+    width: 100%;
+}
+
+.section-content {
+    max-width: 1000px; 
+    margin: auto; 
+    height: 100%;
+}
+
+.footer {
+    margin: auto;
+    padding: 2%;
+    color: #505050;
+}

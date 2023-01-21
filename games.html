@@ -6,18 +6,122 @@
         <meta name="description" content="">
         <meta name="author" content="Andre T.M. Hui">
 
-        <title>ReVox - Soundboard and Voice Changer</title>
+        <title>Andre Hui - Games</title>
 
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
         <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
         <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-        <link href="css/portfolio.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/item-list.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/fd95051d04.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
-        Games
+        <nav class="navbar navbar-expand-sm navbar-dark bg-nav fixed-top">
+            <div class="container-fluid navbar-container">
+                <a class="navbar-brand" href="./"><img class="nav-home" src="img/signature.png"  alt="Home"></a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars navbar-toggler-custom-icon"></i>
+                </button>
+                <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/revox">ReVox</a>
+                        </li>
+                        <li class="nav-item nav-selected">
+                            <a class="nav-link" href="#">Games</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/makes">Makes</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <section class="section">
+            <div class="section-content">
+                <ul class="items container-fluid">
+                    <li class="row item-container">
+                        <div class="col-12 col-sm-7 item-description">
+                            <h3>Session: Drums</h3>
+                            <h4>VR Drum Kit</h4>
+                            <p>
+                                Learn, record, or just jam out in a VR space, with a fully featured drum kit and realistic interactions. Use it with your DAW to record MIDI tracks.<br><br>
+                                Made as a learning project to teach myself Unity development and C#. Ended up pulling out old physics knowledge and learning more about HCI in the process though!
+                            </p>
+                            <ul class="list-inline tech-stack-list">
+                                <li class="list-inline-item">C#</li>
+                                <li class="list-inline-item">Unity</li>
+                                <li class="list-inline-item">C++/Unity Native Plugins</li>
+                                <li class="list-inline-item">VR</li>
+                            </ul>
+                            <a href="https://www.youtube.com/watch?v=RPWr4kSICfY" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+                            <h6>Nov '21 - Apr '22</h6>
+                        </div>
+                        <div class="col-12 col-sm-5 item-pv">
+                            <img src="./img/drumspv.gif">
+                        </div>
+                    </li>
+                    <li class="row item-container">
+                        <div class="col-12 col-sm-7 item-description">
+                            <h3>Holy Grail</h3>
+                            <h4>Rage Game with Sneakers</h4>
+                            <p>
+                                A work in progress, and an ode to sneaker culture. Take your worn-down sneakers, and toss them up phone lines, flag poles and more, on your way to become the Holiest of Grails.
+                            </p>
+                            <ul class="list-inline tech-stack-list">
+                                <li class="list-inline-item">C#</li>
+                                <li class="list-inline-item">Unity</li>
+                                <li class="list-inline-item">2D Platformer</li>
+                            </ul>
+                            <a class="disabled" href=""><i class="fa-solid fa-gamepad"></i></a>
+                            <h6>May '22 - </h6>
+                        </div>
+                        <div class="col-12 col-sm-5 item-pv">
+                            <img src="./img/holygrailpv.gif">
+                        </div>
+                    </li>
+                    <li class="row item-container">
+                        <div class="col-12 col-sm-7 item-description">
+                            <h3>Sideout</h3>
+                            <h4>GeoJam 2022 Submission</h4>
+                            <p>
+                                Submission for a 72 hour game jam. Fight against hostile shapes. Collect their sides and grow yourself. Survive in this top-down geometric game!<br><br>
+                                Came 23rd overall, 4th in gameplay.
+                            </p>
+                            <ul class="list-inline tech-stack-list">
+                                <li class="list-inline-item">C#</li>
+                                <li class="list-inline-item">Unity</li>
+                                <li class="list-inline-item">2D Top-Down</li>
+                            </ul>
+                            <a href="https://onglez.itch.io/sideout" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-gamepad"></i></a>
+                            <h6>Jun '22</h6>
+                        </div>
+                        <div class="col-12 col-sm-5 item-pv">
+                            <img src="./img/sideoutpv.gif">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+        </section>        
+
+        <section class="section" id="footer" style="background-color: #101010;">
+            <div class="footer row section-content">
+                <div class="container-fluid">
+                    <div class="col-12">
+                        <p>Designed & built by Andre Hui</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </body>
+
+    
 </html>

@@ -6,18 +6,151 @@
         <meta name="description" content="">
         <meta name="author" content="Andre T.M. Hui">
 
-        <title>ReVox - Soundboard and Voice Changer</title>
+        <title>Andre Hui - Projects</title>
 
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
         <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
         <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-        <link href="css/portfolio.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/item-list.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/fd95051d04.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
-        Projects
+        <nav class="navbar navbar-expand-sm navbar-dark bg-nav fixed-top">
+            <div class="container-fluid navbar-container">
+                <a class="navbar-brand" href="./"><img class="nav-home" src="img/signature.png"  alt="Home"></a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars navbar-toggler-custom-icon"></i>
+                </button>
+                <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/revox">ReVox</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/games">Games</a>
+                        </li>
+                        <li class="nav-item nav-selected">
+                            <a class="nav-link" href="#">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/makes">Makes</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <section class="section">
+            <div class="section-content">
+                <ul class="items container-fluid">
+                    <li class="row item-container">
+                        <div class="col-12 col-sm-7 item-description">
+                            <h3>ReVox</h3>
+                            <h4>Soundboard, Voice Changer</h4>
+                            <p>
+                                Control your voice with ReVox, an open-source, free all-in-one package containing a soundboard, sampler/recorder and voice changer. Enhance your social gaming experience or livestreams!<br><br>
+                                Originally my introduction to C++, it's now a software I plan on supporting for some time to come.
+                            </p>
+                            <ul class="list-inline tech-stack-list">
+                                <li class="list-inline-item">C++</li>
+                                <li class="list-inline-item">Qt</li>
+                                <li class="list-inline-item">Digital Signal Processing</li>
+                                <li class="list-inline-item">Audio</li>
+                                <li class="list-inline-item">Windows</li>
+                            </ul>
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><a href="./revox"><i class="fa-solid fa-link"></i></a></li>
+                                <li class="list-inline-item"><a href="https://github.com/andre-tm-hui/ReVox" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a></li>
+                            </ul>
+                            <h6>May '22 - </h6>
+                        </div>
+                        <div class="col-12 col-sm-5 item-pv">
+                            <img src="./img/intro.gif">
+                        </div>
+                    </li>
+                    <li class="row item-container">
+                        <div class="col-12 col-sm-7 item-description">
+                            <h3>Portfolio Website</h3>
+                            <h4></h4>
+                            <p>
+                                The second iteration of my personal website. Now with a dedicated page for ReVox!
+                            </p>
+                            <ul class="list-inline tech-stack-list">
+                                <li class="list-inline-item">HTML</li>
+                                <li class="list-inline-item">JavaScript</li>
+                                <li class="list-inline-item">CSS</li>
+                            </ul>
+                            <a href="https://github.com/andre-tm-hui/andre-tm-hui.github.io"><i class="fa-brands fa-github"></i></a>
+                            <h6>Jan '23</h6>
+                        </div>
+                        <div class="col-12 col-sm-5 item-pv">
+                            <img src="./img/">
+                        </div>
+                    </li>
+                    <li class="row item-container">
+                        <div class="col-12 col-sm-7 item-description">
+                            <h3>Learning Tetris</h3>
+                            <h4>4th Year Masters' Study</h4>
+                            <p>
+                                A study on the different learning algorithms used to play games. Tested on an emulation of NES Tetris.<br><br>
+                                Achieved above-human-average performance, but unfortunately it wasn't able to max-out.
+                            </p>
+                            <ul class="list-inline tech-stack-list">
+                                <li class="list-inline-item">Python</li>
+                                <li class="list-inline-item">Pytorch</li>
+                                <li class="list-inline-item">Genetic Algorithm</li>
+                                <li class="list-inline-item">Deep Learning</li>
+                                <li class="list-inline-item">Games</li>
+                            </ul>
+                            <a href="https://github.com/andre-tm-hui/learning-tetris" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-gamepad"></i></a>
+                            <h6>Oct '20 - Apr '21</h6>
+                        </div>
+                        <div class="col-12 col-sm-5 item-pv">
+                            <img src="./img/tetrispv.gif">
+                        </div>
+                    </li>
+                    <li class="row item-container">
+                        <div class="col-12 col-sm-7 item-description">
+                            <h3>RGB Camera Pose Tracking</h3>
+                            <h4>3rd Year Bachelors' Project</h4>
+                            <p>
+                                An implementation of a Human-Computer Interface, using a cheap RGB camera to predict hand pose and track position.<br><br>
+                                Used to give the final presentation.
+                            </p>
+                            <ul class="list-inline tech-stack-list">
+                                <li class="list-inline-item">Python</li>
+                                <li class="list-inline-item">Pytorch</li>
+                                <li class="list-inline-item">Computer Vision</li>
+                                <li class="list-inline-item">Deep Learning</li>
+                                <li class="list-inline-item">Image Processing</li>
+                                <li class="list-inline-item">HCI</li>
+                            </ul>
+                            <a href="https://github.com/andre-tm-hui/learning-tetris" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-gamepad"></i></a>
+                            <h6>Oct '19 - Apr '20</h6>
+                        </div>
+                        <div class="col-12 col-sm-5 item-pv">
+                            <img src="./img/tetrispv.gif">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+        </section>        
+
+        <section class="section" id="footer" style="background-color: #101010;">
+            <div class="footer row section-content">
+                <div class="container-fluid">
+                    <div class="col-12">
+                        <p>Designed & built by Andre Hui</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </body>
+
+    
 </html>
