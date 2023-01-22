@@ -52,16 +52,16 @@ function generateCarouselPositions() {
 var dragStartPoint = 0;
 var carouselDragging = false;
 
-function dragStart(event) {
-    dragStartPoint = event.clientX;
+function dragStart(xPos) {
+    dragStartPoint = xPos;
     carouselDragging = true;
 }
 
-function dragEnd(event) {
+function dragEnd(xPos) {
     if (!carouselDragging) return;
 
     // check if drag is intentional
-    let diff = dragStartPoint - event.clientX;
+    let diff = dragStartPoint - xPos;
     if (Math.abs(diff) < window.innerWidth / 4) return;
 
     if (diff > 0) {
@@ -123,7 +123,7 @@ $(function() {
 });
 
 $('#highlights').on("mousedown", (event) => {
-    dragStart(event);
+    dragStart(event.clientX);
 });
 
 $('#highlights').on("mouseup", () => {
@@ -131,11 +131,11 @@ $('#highlights').on("mouseup", () => {
 });
 
 $('#highlights').on("mousemove", (event) => {
-    dragEnd(event);
+    dragEnd(event.clientX);
 });
 
 $('#highlights').on("touchstart", (event) => {
-    dragStart(event);
+    dragStart(event.pageX);
 });
 
 $('#highlights').on("touchend", () => {
@@ -143,7 +143,7 @@ $('#highlights').on("touchend", () => {
 });
 
 $('#highlights').on("touchmove", (event) => {
-    dragEnd(event);
+    dragEnd(event.pageX);
 });
 
 $('#carouselNext').on("click", () => carouselSet(current + 1));
