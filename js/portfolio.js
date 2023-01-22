@@ -135,7 +135,7 @@ $('#highlights').on("mousemove", (event) => {
 });
 
 $('#highlights').on("touchstart", (event) => {
-    dragStart(event.pageX);
+    dragStart(event.originalEvent.touches[0].pageX);
 });
 
 $('#highlights').on("touchend", () => {
@@ -143,7 +143,7 @@ $('#highlights').on("touchend", () => {
 });
 
 $('#highlights').on("touchmove", (event) => {
-    dragEnd(event.pageX);
+    dragEnd(event.originalEvent.touches[0].pageX);
 });
 
 $('#carouselNext').on("click", () => carouselSet(current + 1));
