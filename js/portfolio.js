@@ -126,11 +126,23 @@ $('#highlights').on("mousedown", (event) => {
     dragStart(event);
 });
 
-$('#highlights').on("mouseup", (event) => {
+$('#highlights').on("mouseup", () => {
     carouselDragging = false;
 });
 
 $('#highlights').on("mousemove", (event) => {
+    dragEnd(event);
+});
+
+$('#highlights').on("touchstart", (event) => {
+    dragStart(event);
+});
+
+$('#highlights').on("touchend", () => {
+    carouselDragging = false;
+});
+
+$('#highlights').on("touchmove", (event) => {
     dragEnd(event);
 });
 
