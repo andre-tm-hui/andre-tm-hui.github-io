@@ -32,6 +32,7 @@ h2 {
 }
 
 .navbar {
+    transition: all 0.3s ease-in-out;
     height: 60px;
     padding: 0%;
 }
