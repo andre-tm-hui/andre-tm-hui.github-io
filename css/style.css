@@ -43,9 +43,10 @@ h2 {
 }
 
 .nav-home {
-    width: 64px;
-    height: 64px;
-    margin: -16px;
+    width: 64px !important;
+    height: 64px !important;
+    margin: -16px !important;
+    max-width: 64px !important;
 }
 
 .navbar-brand {
