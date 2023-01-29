@@ -5,7 +5,7 @@
 .item-container {
     text-align: left;
     max-width: 800px;
-    max-height: 300px;
+    max-height: 320px;
     margin: auto;
     margin-block: 8%;
 }
@@ -21,7 +21,7 @@
 .item-description {
     height: 100%;
     max-height: inherit;
-    margin: 0%;
+    margin: auto;
     z-index: 2;
 }
 
@@ -84,6 +84,11 @@
 .item-description h6 {
     font-size: 0.7em;
     color: #505050;
+}
+
+.item-pv {
+    height: 100%;
+    margin: auto;
 }
 
 .item-pv img {
