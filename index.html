@@ -1,521 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="Andre T.M. Hui">
 
-  <head>
+        <title>Andre Hui</title>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+        <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+        <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/portfolio.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/fd95051d04.js" crossorigin="anonymous"></script>
+    </head>
 
-    <title>Andre Hui - Portfolio</title>
+    <body id="page-top">      
+        <nav class="navbar navbar-expand-sm navbar-dark bg-nav fixed-top" id="navbar">
+            <div class="container-fluid navbar-container">
+                <a class="navbar-brand" href="#"><img class="nav-home" src="img/signature.png"  alt="Home"></a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars navbar-toggler-custom-icon"></i>
+                </button>
+                <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/revox">ReVox</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/games">Games</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/makes">Makes</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <div class="container-fluid p-0">
+            <section class="intro-section" id="intro">
+                <div class="p-3 p-sm-5 row section-content">
+                    <div class="col-12 col-sm-6 col-md-5 offset-md-2" style="text-align: left; margin: auto;">
+                        <h4 style="margin: -5px; margin-left: 0px; color: #808080;">Hi! My name is</h4>
+                        <h1>Andre Hui</h1>
+                        <ul class="intro-list">
+                            <li>Durham CS graduate,</li>
+                            <li>Aspiring software engineer,</li>
+                            <li>Developer at <a href="https://collaction.org" target="_blank" rel="noopener noreferrer">CollAction</a></li>
+                            <li>Creator of <a href="/revox">ReVox</a>,</li>
+                        </ul>
+                        <ul class="list-inline">
+                            <li class="link-icon list-inline-item"><a href="https://github.com/andre-tm-hui" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a></li>
+                            <li class="link-icon list-inline-item"><a href="https://linkedin.com/in/andre-tm-hui" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li class="link-icon list-inline-item"><a href="files/resume.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file"></i></a></li>  
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3" style="text-align: right; margin: auto;">
+                        <img src="img/render.png" style="height: 280px;">
+                    </div>
+                </div>
+            </section>
 
-    <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
-    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+            <section class="section" id="highlights" style="padding-inline: 0%;">
+                <div class="row section-content" style="max-width: 100%;">
+                    <h2>Some Things I've Made</h2>
+                    <div class="carousel">
+                        <a href="/revox" class="item container-fluid">
+                            <div class="row" style="padding: 5%;">
+                                <div class="col-12 col-sm-5 carousel-description">
+                                    <h3 class="row">ReVox</h3>
+                                    <h4 class="row">Soundboard, Sampler and Voice Changer</h4>
+                                    <p class="row">Control your voice with ReVox, an open-source, free all-in-one package containing a soundboard, sampler/recorder and voice changer. Enhance your social gaming experience or livestreams!</p>
+                                    <ul class="list-inline tech-stack">
+                                        <li class="list-inline-item">C++</li>
+                                        <li class="list-inline-item">DSP</li>
+                                        <li class="list-inline-item">Qt</li>
+                                        <li class="list-inline-item">Windows</li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-sm-7 img-container">
+                                    <img src="img/intro.gif">
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=RPWr4kSICfY" target="_blank" rel="noopener noreferrer" class="item container-fluid">
+                            <div class="row" style="padding: 5%;">
+                                <div class="col-12 col-sm-5">
+                                    <h3 class="row">Session: Drums</h3>
+                                    <h4 class="row">A VR Drum Kit</h4>
+                                    <p class="row">Learn, record, or just jam out in a VR space, with a fully featured drum kit and realistic interactions. Use it with your DAW to record MIDI tracks.</p>
+                                    <ul class="list-inline tech-stack">
+                                        <li class="list-inline-item">C#</li>
+                                        <li class="list-inline-item">Unity</li>
+                                        <li class="list-inline-item">C++</li>
+                                        <li class="list-inline-item">Blender</li>
+                                        <li class="list-inline-item">VR</li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-sm-7 img-container">
+                                    <img src="img/drumspv.gif">
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://onglez.itch.io/sideout" target="_blank" rel="noopener noreferrer" class="item container-fluid">
+                            <div class="row" style="padding: 5%;">
+                                <div class="col-12 col-sm-5">
+                                    <h3 class="row">Sideout</h3>
+                                    <h4 class="row">GeoJam 2022</h4>
+                                    <p class="row">Submission for a 72 hour game jam. Fight against hostile shapes. Collect their sides and grow yourself. Survive in this top-down geometric game!</p>
+                                    <p class="row">Came 23rd overall, 4th in gameplay.</p>
+                                    <ul class="list-inline tech-stack">
+                                        <li class="list-inline-item">C#</li>
+                                        <li class="list-inline-item">Unity</li>
+                                        <li class="list-inline-item">2D</li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-sm-7 img-container">
+                                    <img src="img/sideoutpv.gif">
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://github.com/andre-tm-hui/LearningTetris" target="_blank" rel="noopener noreferrer" class="item container-fluid">
+                            <div class="row" style="padding: 5%;">
+                                <div class="col-12 col-sm-5">
+                                    <h3 class="row">Tetris AI</h3>
+                                    <h4 class="row">4th Year Masters' Project</h4>
+                                    <p class="row">A study on the different learning algorithms used to play games. Tested on an emulation of NES Tetris.</p>
+                                    <ul class="list-inline tech-stack">
+                                        <li class="list-inline-item">Python</li>
+                                        <li class="list-inline-item">Pytorch</li>
+                                        <li class="list-inline-item">Genetic Algorithm</li>
+                                        <li class="list-inline-item">Deep Learning</li>
+                                        <li class="list-inline-item">Games</li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-sm-7 img-container">
+                                    <img src="img/tetrispv.gif">
+                                </div>
+                            </div>
+                        </a>
+                        <div class="carousel-button-container">
+                            <div class="carousel-button" id="carouselPrevious"><i class="fas fa-angle-left"></i></div>
+                            <div class="carousel-button" id="carouselNext"><i class="fas fa-angle-right"></i></div>
+                        </div>
+                    </div>
+                    <ul class="dots list-inline" id="carousel-dots"></ul>
+                    <button href="/projects" style="width: 7em;"><span>See More</span></button>
+                </div>
+            </section>
 
-    <!-- Custom styles for this template -->
-    <link href="css/resume.css" rel="stylesheet">
+            <section class="section" id="about" style="background-color: #101010;">
+                <div class="row section-content">
+                    <div class="container-fluid">
+                        <div class="row flex-row-reverse">
+                            <div class="about-description col-12 col-sm-7">
+                                <h2>About Me</h2>
+                                <p>I am an aspiring software engineer, having graduated from Durham University in Computer Science. Currently, I'm looking for work, whilst progressing with my passion project, <a href="/revox">ReVox</a>, as well as contributing to the development of the <a href="https://collaction.org" target="_blank" rel="noopener noreferrer">CollAction</a> flutter app.</a></p>
+                                <p>I'm a firm believer of using the right tool for the job, and I'm always keen to learn a new tech stack/library to solve a problem.</p>
+                                <p>If I'm not programming, I'm usually noodling on the guitar, <a href="/makes">making</a> things, playing basketball or gaming with friends.</p>
+                            </div>
+                            <div class="portrait col-12 col-sm-4">
+                                <img src="img/profile.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-  </head>
+            <section class="section" id="contact">
+                <div class="row section-content">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="contact-description col-12 col-sm-5">
+                                <h2>Get in Touch!</h2>
+                                <p>Got any questions? Ideas? Or do you just want to chat? Let me know!</p>
+                            </div>
+                            <div class="col-12 col-sm-7">
+                                <form id="contact-form" method="POST" action="https://forms.un-static.com/forms/4c9221cf6bc73e79193d26b3be0b40898013b9bb" class="container-fluid">
+                                    <div class="row" id="contact-details">
+                                        <div class="contact-field col-12 col-sm-6">
+                                            <input type="text" id="inputName" name="inputName" placeholder="Your Name *" required>
+                                        </div>
+                                        <div class="contact-field col-12 col-sm-6">
+                                            <input type="email" id="inputEmail" name="inputEmail" placeholder="Your Email *" required>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="contact-field col-12">
+                                            <textarea id="inputMessage" name="inputMessage" rows="8" maxlength="4000" placeholder="Your Message *" required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <button class="form-button" type="submit">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-  <body id="page-top">
-      <div class="se-pre-con">
+            <section class="section" id="footer" style="background-color: #101010;">
+                <div class="footer row section-content">
+                    <div class="container-fluid">
+                        <div class="col-12">
+                            <p>Designed & built by Andre Hui</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-      </div>
-
-      <nav class="navbar navbar-expand navbar-dark bg-primary fixed-top">
-          <a class="navbar-brand js-scroll-trigger" href="#page-top">
-              <span class="d-block d-lg-none"></span>
-          </a>
-          <ul class="navbar-nav list-inline">
-              <li class="nav-item list-inline-item">
-                  <a class="nav-link js-scroll-trigger" style="font-size: 14px" href="#about">About</a>
-              </li>
-              <li class="nav-item list-inline-item">
-                  <a class="nav-link js-scroll-trigger" style="font-size: 14px" href="#featuredproj">Featured Projects</a>
-              </li>
-              <li class="nav-item list-inline-item">
-                  <a class="nav-link js-scroll-trigger" style="font-size: 14px" href="#projects">Other Work</a>
-              </li>
-          </ul>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-          </div>
-      </nav>
-
-      <div class="container-fluid p-0 bg-secondary main-body">
-
-          <section class="resume-section p-3 p-lg-5 d-flex d-column border-primary" id="about">
-              <div class="my-auto">
-                  <h4 style="font-family: 'NES'; color: #BD5D38; ">Hi! My name is</h4>
-
-                  <h2 class="mb-2 col-12 text-break" id="name" style="font-family: 'NES'; max-width: 100%;">---------</h2>
-
-                  <p class="mb-3">
-                      I'm an MEng in Computer Science, who enjoys creating cool software, games and tools. Currently open for Software Engineering or Game Development work.
-                  </p>
-
-                  <div class="border-3 col-sm-12 col-md-6" style="margin: auto;">
-                      <div class="subheading mb-3">
-                          <a class="btn fa fa-inverse" style="font-family: 'NES'; font-size: 12px; background-color: #495057 " href="mailto:andre.tm.hui@gmail.com">Get in Touch</a>
-                      </div>
-
-                      <ul class="list-inline list-social-icons mb-0">
-                          <li class="list-inline-item">
-                              <a href="https://www.linkedin.com/in/andre-tm-hui/">
-                                  <span class="fa-stack fa-lg">
-                                      <i class="fa fa-circle fa-stack-2x"></i>
-                                      <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                                  </span>
-                              </a>
-                          </li>
-                          <li class="list-inline-item">
-                              <a href="https://github.com/andre-tm-hui/">
-                                  <span class="fa-stack fa-lg">
-                                      <i class="fa fa-circle fa-stack-2x"></i>
-                                      <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                  </span>
-                              </a>
-                          </li>
-                          <li class="list-inline-item">
-                              <a href="https://www.thingiverse.com/onglez">
-                                  <span class="fa-stack fa-lg">
-                                      <i class="fa fa-circle fa-stack-2x"></i>
-                                      <i class="fa fa-stack-1x fa-inverse" style="font-size:32px; font-weight:900">T</i>
-                                  </span>
-                              </a>
-                          </li>
-                          <li class="list-inline-item">
-                              <a href="https://andre-tm-hui.github.io/files/andre-hui-resume.pdf">
-                                  <span class="fa-stack fa-lg">
-                                      <i class="fa fa-circle fa-stack-2x"></i>
-                                      <i class="fa fa-stack-1x fa-inverse">CV</i>
-                                  </span>
-                              </a>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-          </section>
-
-          <section class="resume-section p-3 p-lg-5 d-flex flex-column border-primary">
-              <div class="my-auto">
-                  <h3 class="mb-3 border-menu-primary col-sm-12 col-md-6" style="font-family: 'NES'; margin: auto;">About Me</h3>
-                  <p>
-                      Hello! My name is Andre, and I'm a Computer Science graduate from Durham University. Since graduating in 2021, I've moved from Hong Kong to Canada with my family, and spent a year self-studying, learning more about game development, 3D modelling and C++.
-                  </p>
-                  <p>
-					  During this time, I've had the chance to participate in my first game jam, develop a small open-source audio app, and contribute to the development of a mobile app for a non-profit. Through this, I've learnt the excitement of having my creations be played/used by strangers on the internet, as well as the stress of dealing with unhappy customers.
-                  </p>
-                  <p class="mb-5">
-                      At the moment, I'm splitting my time between developing <a href="#virtualsound">ReVox</a> and developing for <a href="https://collaction.org">CollAction</a>. When I'm not working on programming and game projects, I often play basketball, noodle on the guitar, make things in CAD or play video games.
-                  </p>
-
-                  <div class="border-secondary">
-                      <h6 class="mb-3" style="font-family: 'NES'">Languages/Tools/Software</h6>
-                      <ul class="list-inline">
-                          <li class="list-inline-item skill-item mb-2">Python</li>
-                          <li class="list-inline-item skill-item mb-2">C#</li>
-                          <li class="list-inline-item skill-item mb-2">C++</li>
-						  <li class="list-inline-item skill-item mb-2">Flutter/Dart</li>
-                          <li class="list-inline-item skill-item mb-2">HTML</li>
-                          <li class="list-inline-item skill-item mb-2">CSS</li>
-                          <li class="list-inline-item skill-item mb-2">Javascript</li>
-                          <li class="list-inline-item skill-item mb-2">Java</li>
-                          <li class="list-inline-item skill-item mb-2">Unity Engine</li>
-                          <li class="list-inline-item skill-item mb-2">Qt Framework</li>
-                          <li class="list-inline-item skill-item mb-2">JUCE Framework</li>
-                          <li class="list-inline-item skill-item mb-2">Portaudio</li>
-                          <li class="list-inline-item skill-item mb-2">Libsndfile</li>
-                          <li class="list-inline-item skill-item mb-2">Pytorch</li>
-                          <li class="list-inline-item skill-item mb-2">OpenCV</li>
-                          <li class="list-inline-item skill-item mb-2">Numpy</li>
-                          <li class="list-inline-item skill-item mb-2">Node.JS</li>
-                          <li class="list-inline-item skill-item mb-2">Git</li>
-                          <li class="list-inline-item skill-item mb-2">Blender</li>
-                      </ul>
-                  </div>
-              </div>
-
-          </section>
-
-          <section class="resume-section p-3 p-lg-5 d-flex flex-column border-primary" id="featuredproj">
-              <div class="my-auto">
-                  <h3 class="mb-3 border-menu-primary col-sm-12 col-md-6" style="margin: auto;">Featured Projects</h3>
-                  <div class="row featured-item" style="margin:1%;" id="virtualsound">
-                      <div class="col-sm-12 col-md-8 featured-item-component">
-                          <image style="width: 100%; max-width: 600px;" src="img/intro.gif"></image>
-                      </div>
-                      <div class="col-sm-12 col-md-4 featured-item-component" style="margin: auto;">
-                          <div class="row"><h5>ReVox</h5></div>
-                          <div class="row">
-                              <p>
-                                  An audio sampler, soundboard and voice changer, all in one program, for anyone who wants to spice up their voice chats or livestreams.
-                              </p>
-                          </div>
-                          <div class="row">
-                              <button type="button" class="btn mb-1" style="margin: auto; max-width: 100px; font-size: 14px; padding: 4px; background-color: #454545; color: #FFFFFF;" data-bs-toggle="modal" data-bs-target="#vst">See More</button>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="row featured-item" style="margin:1%;">
-                      <div class="col-sm-12 col-md-8 featured-item-component">
-                          <iframe style="width: 100%; max-width: 600px; aspect-ratio: 16/9;" src="https://www.youtube.com/embed/RPWr4kSICfY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe>
-                      </div>
-                      <div class="col-sm-12 col-md-4 featured-item-component" style="margin: auto;">
-                          <div class="row"><h5>VR Drum Simulator</h5></div>
-                          <div class="row">
-                              <p>
-                                  A fully featured virtual drum kit, with customizable kits, MIDI support and realistic interaction.
-                              </p>
-                          </div>
-                          <div class="row">
-                              <button type="button" class="btn mb-1" style="margin: auto; max-width: 100px; font-size: 14px; padding: 4px; background-color: #454545; color: #FFFFFF;" data-bs-toggle="modal" data-bs-target="#vrdrums">See More</button>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </section>
-
-          <section class="resume-section p-3 p-lg-5 d-flex flex-column border-primary" id="projects">
-              <div class="my-auto row">
-                  <div class="col-12"><h3 class="border-menu-primary col-sm-12 col-md-6" style="margin: auto;">Other Work</h3></div>
-                  <div class="col col-sm-12 col-md-6 gy-5">
-                      <div class="portfolio-item">
-                          <div class="row" style="height: 85%; vertical-align:top;">
-                              <h3>Holy Grail</h3>
-                              <div class="col-xs-12 text-center">
-                                  <img src="img/holygrailpv.gif" style="width:90%; max-width: 400px;" />
-                              </div>
-                              <p style="font-size: 14px">
-                                  A rage game, inspired by Getting Over It, Jump King and Pogostuck, and themed around sneaker culture. This is a personal game project in early development, made in Unity.
-                              </p>
-                          </div>
-
-                          <div class="row" style="padding:18px;">
-                              <a type="button" class="btn mb-1" style="font-size: 14px; padding: 4px; background-color: #454545; color: #AAAAAA;" href="https://onglez.itch.io/sideout">See More</a>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col col-sm-12 col-md-6 gy-5">
-                      <div class="portfolio-item">
-                          <div class="row" style="height: 85%; vertical-align:top;">
-                              <h5>Sideout - GeoJam 2022</h5>
-                              <div class="col-xs-12 text-center">
-                                  <img src="img/sideoutpv.gif" style="width:90%; max-width: 400px;" />
-                              </div>
-                              <p style="font-size: 14px">
-                                  Part of a 72 hour game jam, this is a top-down geometry-themed survival shooter game, loosely inspired by games like Vampire Survivors and snake.io. This game achieved 23rd place, and was voted 4th place for gameplay. Developed in Unity.
-                              </p>
-                          </div>
-
-                          <div class="row" style="padding:18px;">
-                              <a type="button" class="btn mb-1" style="font-size: 14px; padding: 4px; background-color: #454545; color: #AAAAAA;" href="https://onglez.itch.io/sideout">See More</a>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="col col-sm-12 col-md-6 gy-5">
-                      <div class="portfolio-item">
-                          <div class="row" style="height: 85%; vertical-align:top;">
-                              <h5>A Deepdive into Tetris AI</h5>
-                              <div class="col-xs-12 text-center">
-                                  <img src="img/tetrispv.gif" style="width: 55%; max-width: 400px;" />
-                              </div>
-                              <p style="font-size: 14px">
-                                  A 4th Year Masters project, agents based on several different algorithms are tested on their ability to play NES Tetris. Programmed in Python, using Pytorch and nes-py.
-                              </p>
-                          </div>
-
-                          <div class="row" style="padding:18px;">
-                              <a type="button" class="btn mb-1" style="font-size: 14px; padding: 4px; background-color: #454545; color: #AAAAAA;" href="files/y4_projectpaper.pdf">See More</a>
-                              <a type="button" class="btn mb-1" style="font-size: 14px; padding: 4px; background-color: #454545; color: #AAAAAA;" href="https://github.com/andre-tm-hui/LearningTetris">GitHub Link</a>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="col col-sm-12 col-md-6 gy-5">
-                      <div class="portfolio-item">
-                          <div class="row" style="height: 85%; vertical-align:top;">
-                              <h6>Hand Gesture Estimation Using a Convolutional Neural Network and a Single RGB Camera</h6>
-                              <div class="col-xs-12 text-center">
-                                  <iframe style="width: 90%; max-width: 400px; aspect-ratio: 16/9;" src="https://www.youtube.com/embed/UWQnB8vu8Ao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                              </div>
-                              <p style="font-size: 14px">
-                                  A 3rd Year university project, gestures are detected using a single front-facing RGB camera, employing various Computer Vision techniques to detect a hand, and a CNN for gesture identification. Programmed in Python, using openCV and Pytorch.
-                              </p>
-                          </div>
-
-                          <div class="row" style="padding:18px;">
-                              <a type="button" class="btn mb-1" style="font-size: 14px; padding: 4px; background-color: #454545; color: #AAAAAA;" href="files/vmrj42_projectpaper.pdf">See More</a>
-                              <a type="button" class="btn mb-1" style="font-size: 14px; padding: 4px; background-color: #454545; color: #AAAAAA;" href="https://github.com/andre-tm-hui/Single-RGB-Camera-Gesture-Controller">GitHub Link</a>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="col col-sm-12 col-md-6 gy-5">
-                      <div class="portfolio-item">
-                          <div class="row" style="height: 100%; vertical-align:top;">
-                              <h5>River Tees Rediscovered - Virtual Tour</h5>
-                              <div class="col-xs-12 text-center">
-                                  <img src="img/rivertees.png" style="width: 90%; max-width: 400px;" />
-                              </div>
-                              <p style="font-size: 14px">
-                                  A 2nd Year university group project, we design and implement a virtual tour for a set of trails provided by River Tees Rediscovered. An Agile development workflow was established, with weekly Scrums, and termly meetings with the customer. I was responsible for UI involving the viewing of trails, and worked with the team on integration between the front- and back-ends.
-                              </p>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="col col-sm-12 col-md-6 gy-5">
-                      <div class="portfolio-item">
-                          <div class="row" style="height: 85%; vertical-align:top;">
-                              <h5>3D Printed Quest 2 "Developers'" Headstrap</h5>
-                              <div class="col-xs-12 text-center">
-                                  <img src="img/queststrap.jpg" style="width: 80%; max-width: 400px;" />
-                              </div>
-                              <p style="font-size: 14px">
-                                  A maker project designed to streamline the VR game-development process by removing the need for the user to completely take of their headset to make minute changes.
-                              </p>
-                          </div>
-
-                          <div class="row" style="padding:18px;">
-                              <a type="button" class="btn mb-1" style="font-size: 14px; padding: 4px; background-color: #454545; color: #AAAAAA;" href="https://www.thingiverse.com/thing:5407375">Thingiverse Link</a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </section>
-
-
-          <div class="modal fade" id="vrdrums" tabindex="-1" role="dialog" aria-labelledby="vrDrumSim" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                  <div class="modal-content bg-secondary" style="border-radius:0px">
-                      <div class="modal-header border-secondary">
-                          <h3 class="modal-title" id="vrDrumSim">VR Drum Simulator</h3>
-                          <button type="button" class="btn-close" style="color:#FFFFFF;" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                          <p>
-                              A virtual reality drumming simulator, designed to be as true-to-life as possible, with responsive interactions. This simulator includes:
-                          </p>
-                          <ul class="fa-ul mb-0">
-                              <li style="padding:3px">
-                                  Assortment of kit parts: Snare, Kick, Hi-Hat, 2 Crashes, 3 Toms and a Ride Cymbal, all modelled in Blender
-                              </li>
-                              <li style="padding:3px">
-                                  Specific interactions including Rimshots on the snare, an alternate ride tone based on hit position and the ability to choke cymbals
-                              </li>
-                              <li style="padding:3px">
-                                  Kit I/O: save and load different kit setups easily
-                              </li>
-                              <li style="padding:3px">
-                                  Play your own music: play audio files in the game by placing audio files in a designated folder
-                              </li>
-                              <li style="padding:3px">
-                                  MIDI I/O: connect the virtual kit to your DAW/plugin of choice (requires loopMIDI for Windows)
-                              </li>
-                              <li style="padding:3px">
-                                  Analog kick and hi-hat pedal interactions, allowing control over their dynamics
-                              </li>
-                          </ul>
-
-                          <div class="col-xs-12 text-center">
-                              <iframe width="560" height="315" style="" src="https://www.youtube.com/embed/RPWr4kSICfY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                          </div>
-
-                          <h4 style="padding-top: 40px;">Motive</h4>
-                          <p>
-                              This project was my first independent Unity project, away from university. Having more time to dedicate to game and VR development, I wanted to make something for VR that wasn't too ambitious for a programmer, yet lined up with my interests. Being a guitarist of 10 years, my mind immediately turned to music and instruments.
-                          </p>
-                          <p>
-                              I chose drums specifically because it seemed to be the most achievable with modern consumer tech, as opposed to a piano or guitar that requires precise finger tracking.
-                          </p>
-                          <p>
-                              Having worked on this project for half a year, if I were to take this project even further, I would like to expand the amount of instruments available in the game, with the goal of allowing players to collaborate remotely in a jam room, and play music together.
-                          </p>
-
-                          <h4 style="padding-top: 40px">Challenges:</h4>
-                          <ul class="fa-ul mb-0">
-                              <li style="padding:3px">
-                                  Collision causing multiple audio events: solved by setting a timeout equivalent to the world-record for fastest one-handed drum roll.
-                              </li>
-                              <li style="padding:3px">
-                                  Missed collisions due to drumsticks passing through the entire collider in a single frame: solved by interpolating the drumstick's path and using raycasts to check for collisions.
-                              </li>
-                              <li style="padding:3px">
-                                  Single drum strokes 'hitting through' multiple drums: only process the first raycast collision point found (see above).
-                              </li>
-                              <li style="padding:3px">
-                                  No native support for MIDI output: learned C++ and used JUCE framework to develop a Unity Native Plugin that outputs to a Virtual MIDI Device.
-                              </li>
-                              <li style="padding:3px">
-                                  Reducing unintentional strikes: find the normal to the top surface of a drum/cymbal, and compare the velocity of the stick to the normal. If the angle between the two vectors is less than a defined threshold, initiate an audio event.
-                              </li>
-                              <li style="padding:3px">
-                                  No freely available, aesthetic drum 3D models: learned Blender and created custom drum assets for the game.
-                              </li>
-                              <li style="padding:3px">
-                                  XR UI design: iterated through several different UI designs to determine the most intuitive and comfortable design.
-                              </li>
-                          </ul>
-
-                          <h4 style="padding-top: 40px">Technologies:</h4>
-                          <ul class="mb-0 list-inline">
-                              <li class="list-inline-item">C#</li>
-                              <li class="list-inline-item">Unity Engine</li>
-                              <li class="list-inline-item">Unity XR</li>
-                              <li class="list-inline-item">Blender</li>
-                              <li class="list-inline-item">C++</li>
-                              <li class="list-inline-item">JUCE Framework</li>
-                              <li class="list-inline-item">Virtual Reality</li>
-                          </ul>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-          <div class="modal fade" id="vst" tabindex="-1" role="dialog" aria-labelledby="vst" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                  <div class="modal-content bg-secondary" style="border-radius:0px">
-                      <div class="modal-header border-secondary">
-                          <h3 class="modal-title" id="vst">Virtual Soundtool</h3>
-                          <button type="button" class="btn-close" style="color:#FFFFFF;" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                          <p>
-                              A tool aimed at livestreamers, or anyone who wants to have more fun in their voicechats. Features:
-                          </p>
-                          <ul class="fa-ul mb-0">
-                              <li style="padding:3px">
-                                  Custom hotkeys: add, remove and change hotkeys
-                              </li>
-                              <li style="padding:3px">
-                                  Realtime sampling: hold an empty hotkey to start recording audio from your microphone, system audio or both
-                              </li>
-                              <li style="padding:3px">
-                                  Soundboard: press a hotkey to play the audio clip associated to the key
-                              </li>
-                              <li style="padding:3px">
-                                  Voice changer: press a hotkey to toggle voice effects. Currently, reverb is available.
-                              </li>
-                          </ul>
-
-                          <div class="col-xs-12 text-center">
-                              <iframe width="560" height="315" style="" src="https://www.youtube.com/embed/OLpiWMZ6lKA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                          </div>
-
-                          <h4 style="padding-top: 40px;">Motive</h4>
-                          <p>
-                              Having occasionally tuned in to livestreams since 2018, I learnt of the GoXLR - a USB mixer/sampler/soundboard/voice-changer. A quick google search and $500 pricetag later, I turned to my IDE and started seeing what I could do with Pyaudio and Python. What resulted was a functioning, but inelegant hotkey sampler and soundboard. By then, summer was over and I had to return to university, so the project was dropped for a while.
-                          </p>
-                          <p>
-                              Fast forward to 2022, after reaching a comfortable point with my VR drum simulator, I chose to revisit this project, with the goal of turning it into something any person can use. Immediately, that rules out developing in Python, being unable to compile the code into a portable executable. Having got a taster for C++ through custom native Unity plugins, I wanted to get more familiar with the language, and knew that it was commonly used for writing distributable software. And so, I restarted the project.
-                          </p>
-
-                          <h4 style="padding-top: 40px">Challenges:</h4>
-                          <ul class="fa-ul mb-0">
-                              <li style="padding:3px">
-                                  New language: C++ is a lower-leveled relative to other languages like C#, Python, Java, so I had to familiarize myself with concepts such as pointers and addresses, in the context of C++.
-                              </li>
-                              <li style="padding:3px">
-                                  Installing libraries: in Python, installing new libraries is as simple as calling "pip install x". C++ is more hands on, requiring you to either find pre-compiled libraries (often out of date), or compile libraries yourself in Visual Studio or using CMake, and then link the libraries to the project.
-                              </li>
-                              <li style="padding:3px">
-                                  Virtual audio cables: the entire project relies on the ability to output audio to an input device, which is not natively supported. Luckily, <a href="https://vb-audio.com/Cable/">VB-Audio</a> makes a free virtual audio cable driver that allows just that.
-                              </li>
-                              <li style="padding:3px">
-                                  Audio processing: I had to study digital audio, including file formats for I/O with <a href="https://github.com/libsndfile/libsndfile">Libsndfile</a>, and raw audio data in <a href="http://www.portaudio.com/">PortAudio</a>. To build on that, I had studied algorithms for implementing digital audio effects, such as reverberators and phase vocoders.
-                              </li>
-                              <li style="padding:3px">
-                                  Windows hooks: in order to make functioning hotkeys, I learnt a bit about Windows hooks, allowing for background listening of keyboard inputs, meaning hotkeys can be activated regardless of which window is in focus.
-                              </li>
-                          </ul>
-
-                          <h4 style="padding-top: 40px">Technologies:</h4>
-                          <ul class="mb-0 list-inline">
-                              <li class="list-inline-item">C++</li>
-                              <li class="list-inline-item">Qt Creator</li>
-                              <li class="list-inline-item">Windows libraries</li>
-                              <li class="list-inline-item">PortAudio</li>
-                              <li class="list-inline-item">Libsndfile</li>
-                              <li class="list-inline-item">Visual Studio</li>
-                              <li class="list-inline-item">CMake</li>
-                          </ul>
-
-                          <h4 style="padding-top: 40px">Currently Working On:</h4>
-                          <ul class="fa-ul mb-0">
-                              <li style="padding:3px">
-                                  Mic Effect: hardtune/T-Pain autotune using a phase vocoder.
-                              </li>
-                              <li style="padding:3px">
-                                  UI Revamp: separate mic effect hotkeys from soundboard hotkeys, and abstract away less commonly changed items (e.g. device configuration).
-                              </li>
-                          </ul>
-
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-          <div class="modal fade" id="vrpiano" tabindex="-1" role="dialog" aria-labelledby="vrPianoSim" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                  <div class="modal-content bg-secondary">
-                      <div class="modal-header">
-                          <h2 class="modal-title" id="vrPianoSim">VR Piano Simulator</h2>
-                          <button type="button" class="btn-close" style="color:#FFFFFF;" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                          <p>
-                              A virtual reality piano/keyboard simulator, in very early development, which:
-                          </p>
-                          <ul class="fa-ul mb-0">
-                              <li style="padding:3px">
-                                  Maps a piano to a flat surface: place your hands on a flat surface for 3 seconds to spawn a piano on that surface. This solves the lack of tactile feedback as found in other implementations.
-                              </li>
-                              <li style="padding:3px">
-                                  Uses hand-tracking: currently using Oculus hand-tracking, but I might swap to LucasVRTech's <a href="https://www.youtube.com/c/LucasVRTech">VR Gloves</a> to improve accuracy.
-                              </li>
-                              <li style="padding:3px">
-                                  Implements a sustain pedal by either: using head motion/pose or external input devices.
-                              </li>
-                              <li style="padding:3px">
-                                  Outputs MIDI with loopMIDI on Windows.
-                              </li>
-                          </ul>
-
-                          <h3 style="padding-top: 40px">Current Challenges:</h3>
-                          <ul class="fa-ul mb-0">
-                              <li style="padding:3px">
-                                  Quest Hand-Tracking: introduces noticeable latency in collisions, and not supported in PCVR, hence making it impossible to output MIDI.
-                              </li>
-                          </ul>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-      </div>
-
-      <!-- Bootstrap core JavaScript -->
-      <script src="vendor/jquery/jquery.min.js"></script>
-      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-      <!-- Plugin JavaScript -->
-      <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-
-      <!-- Custom scripts for this template -->
-      <script src="js/resume.js"></script>
-
-  </body>
-
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="js/portfolio.js"></script>
+        <script src="js/script.js"></script>
+    </body>
 </html>

@@ -1,0 +1,150 @@
+.items {
+    padding: auto;
+}
+
+.item-container {
+    text-align: left;
+    max-width: 800px;
+    max-height: 320px;
+    margin: auto;
+    margin-block: 8%;
+}
+
+.item-pv {
+    height: 100%;
+    max-height: inherit;
+    max-width: inherit;
+    margin: 0%;
+    z-index: 1;
+}
+
+.item-description {
+    height: 100%;
+    max-height: inherit;
+    margin: auto;
+    z-index: 2;
+}
+
+.item-container:nth-child(even) {
+    text-align: right;
+    flex-direction: row-reverse !important;
+}
+
+.item-description h4 {
+    color: #808080;
+    margin-top: -2%;
+    margin-bottom: -2%;
+    font-size: 1.1em;
+}
+
+.item-description p {
+    font-size: 0.9em;
+    background-color: #303030;
+    padding: 2%;
+    margin: 3% 3% 3% 0%;
+    border-radius: 2px;
+    width: 90%;
+}
+
+.item-container:nth-child(even) .item-description p {
+    margin: 3% 3% 3% 10%;
+}
+
+.item-description .tech-stack-list {
+    margin-top: -2%;
+    margin-bottom: -0.5%;
+    font-size: 0.8em;
+    color: #808080;
+    font-weight: 600;
+    max-width: 60%;
+}
+
+.item-container:nth-child(even) .tech-stack-list {
+    margin-left: auto;
+    margin-right: 0%;
+}
+
+.tech-stack-list li {
+    transition: all 0.2s ease-in-out;
+}
+
+.tech-stack-list li:hover {
+    color: #C0C0C0;
+}
+
+.item-description a {
+    font-size: 1.2em;
+    color: #707070;
+}
+
+.item-description a:hover {
+    color: #C0C0C0;
+}
+
+.item-description h6 {
+    font-size: 0.7em;
+    color: #505050;
+}
+
+.item-pv {
+    height: 100%;
+    margin: auto;
+}
+
+.item-pv img {
+    transition: all 0.2s ease-in-out;
+    height: 100%;
+    max-height: inherit;
+    max-width: 150%;
+    object-fit: contain;
+    border-radius: 5px;
+    filter: saturate(0.3);
+}
+
+.item-container:hover .item-pv img{
+    filter: none;
+}
+
+.item-container:nth-child(odd) img {
+    float: right
+}
+
+a.disabled {
+    pointer-events: none;
+    color: #303030;
+}
+
+@media (max-width: 576px) {
+    .item-container {
+        text-align: center !important;
+        max-height: 700px;
+    }
+
+    .item-pv img {
+        width: 100%;
+    }
+
+    .item-description h4 {
+        margin-bottom: 1.5% !important;
+    }
+    
+    .item-description p {
+        margin: auto !important;
+    }
+
+    .item-description .tech-stack-list {
+        margin-block: 1% !important;
+        max-width: 100%;
+        text-align: center !important;
+    }
+
+    .item-container {
+        border-top: 1px solid #303030;
+        padding: 8% 3% 3% 3%;
+    }
+
+    .item-container:nth-child(1) {
+        border: 0px;
+        padding-top: 0%;
+    }
+}

@@ -1,0 +1,240 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 54px;
+    color: #A0A0A0;
+    background-color: #181818;
+    text-align: center;
+    margin: auto;
+}
+
+a {
+    transition: color .1s ease-in;
+    color: #009090;
+    text-decoration-line: none;
+}
+
+a:hover {
+    color: #00D0D0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    margin: auto;
+    color: #808080;
+}
+
+.navbar {
+    transition: all 0.3s ease-in-out;
+    height: 60px;
+    padding: 0%;
+}
+
+.navbar-container {
+    height: 100%;
+    max-width: 1080px;
+}
+
+.nav-home {
+    width: 64px !important;
+    height: 64px !important;
+    margin: -16px !important;
+    max-width: 64px !important;
+}
+
+.navbar-brand {
+    padding-inline: 10px;
+}
+
+.nav-item {
+    font-size: 16px;
+    padding-inline: 10px;
+}
+
+.nav-item:hover .nav-link {
+    color: #E0E0E0 !important;
+}
+
+.nav-item.nav-selected .nav-link {
+    color: #303030 !important;
+    pointer-events: none;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler:hover .navbar-toggler-custom-icon,
+.navbar-toggler:active .navbar-toggler-custom-icon {
+    color: #FFFFFFD0;
+}
+
+.navbar-toggler-custom-icon {
+    transition: color .1s ease-in;
+    color: #FFFFFF80;
+}
+
+.bg-nav {
+    background-color: #080808 !important;
+}
+
+.navbar-nav {
+    height: 100%;
+    background-color: #080808;
+}
+
+.navbar-nav li {
+    height: 100%;
+    margin: auto;
+}
+
+.nav-link {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.link-icon {
+    vertical-align: middle;
+    font-size: 30px;
+    color: #808080;
+}
+
+.link-icon:hover {
+    cursor: pointer;
+    color: #A0A0A0;
+}
+
+.link-button {
+    padding-inline: 3%;
+    margin-top: 2px;
+    vertical-align: middle;
+    font-size: 14px;
+    background-color: #009090;
+    height: 28px;
+    width: auto;
+    border-radius: 10px;
+}
+
+.link-button:hover {
+    background-color: #A0A0A0;
+}
+
+.link-button a {
+    vertical-align: middle;
+    color: #202020;
+    font-weight: 700;
+}
+
+.link-button a:hover {
+    color: #202020;
+}
+
+button {
+    transition: all 0.3s ease-in-out;
+    margin: auto;
+    width: auto;
+    text-align: center;
+    border: 1px #303030 solid;
+    border-radius: 5px;
+    padding: 6px 20px 8px 20px;
+    background-color: transparent;
+    color: #808080;
+}
+
+button:hover {
+    border-color: #00D0D0;
+    color: #00D0D0;
+}
+
+.section {
+    width: 100%;
+    padding: 5%;
+}
+
+.section-content {
+    max-width: 1000px; 
+    margin: auto; 
+    height: 100%;
+}
+
+.footer {
+    margin: auto;
+    padding: 0%;
+    color: #505050;
+}
+
+.left-align {
+    margin: auto;
+    justify-content: left;
+    text-align: left;
+}
+
+.right-align {
+    margin: auto;
+    justify-content: right;
+    text-align: right;
+    flex-direction: row-reverse !important;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+@media (max-width: 576px) {
+    .section {
+        padding: 5% 2% 10% 2%;
+    }
+
+    .navbar-toggler {
+        margin-right: 0%;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        left: 0%;
+        top: 100%;
+        width: 100%;
+    }
+
+    .navbar-nav {
+        height: auto;
+    }
+
+    .nav-item {
+        width: 100%;
+    }
+
+    .nav-item a {
+        justify-content: center;
+        width: auto;
+        margin: auto;
+    }
+
+    .nav-item.nav-selected {
+        background-color: #505050;
+    }
+
+    .left-align {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .right-align {
+        justify-content: center;
+        text-align: center;
+    }
+}
