@@ -5,7 +5,6 @@
 .item-container {
     text-align: left;
     max-width: 800px;
-    max-height: 320px;
     margin: auto;
     margin-block: 8%;
 }
@@ -117,7 +116,6 @@ a.disabled {
 @media (max-width: 576px) {
     .item-container {
         text-align: center !important;
-        max-height: 800px;
     }
 
     .item-pv img {
