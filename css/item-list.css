@@ -117,7 +117,7 @@ a.disabled {
 @media (max-width: 576px) {
     .item-container {
         text-align: center !important;
-        max-height: 700px;
+        max-height: 800px;
     }
 
     .item-pv img {
