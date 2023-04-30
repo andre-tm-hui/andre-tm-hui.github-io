@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="Andre T.M. Hui">
+
+        <title>Sostenahto Pedal - Infinite Sustain</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+        <link href="../../css/style.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/fd95051d04.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-nav fixed-top" id="navbar">
+            <div class="container-fluid navbar-container">
+                <a class="navbar-brand" href="./"><img class="nav-home" src="../rc/brand.png"  alt="Home"></a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars navbar-toggler-custom-icon"></i>
+                </button>
+                <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                        <li class="nav-item nav-selected">
+                            <a class="nav-link" href="#">Download</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./license-manager.html">License Manager</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/andre-tm-hui/SustenatoPedal">GitHub</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid" style="padding:0%;">
+            <section class="section" id="top-download">
+                <div class="row section-content">
+                    <div class="col-12 col-sm-8 left-align">
+                        <h1 style="margin-bottom: -0.15em;">Sostenahto</h1>
+                        <h4 style="margin-bottom: -0.5em; color: #B0B0B0;">VST Plugin</h4>
+                        <h6 style="margin-block: 2em; font-weight: 500; color: #B0B0B0;">Infinite sostenuto for guitars and other analog instruments. Control how long your notes and chords last for.<br><br>Inspired by the <a href="https://gamechangeraudio.com/pluspedal/">Gamechanger Plus Pedal</a>.</h6>
+                        <button id="download-button"><span><i class="fa-solid fa-download"></i> Download for Windows</span></button>
+                    </div>
+                    <div class="col-12 col-sm-4 right-align">
+                        <img src="rc/gui_persp.png">
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" style="padding-block: 2%; background-color: #101010;" id="preview-video">
+                <iframe style="width: 80%; max-width: 700px; height: auto; aspect-ratio: 16/9;" src="https://www.youtube.com/embed/L787l5KAvWw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </section>
+
+            <section class="section" id="about">
+                <h2 style="color:#FFFFFF; margin-bottom: 1em;">About</h2>
+                <p style="width: 80%; max-width: 600px; margin: auto;">
+                    Sometimes, a guitar's regular sustain just isn't enough. Moreover, the notes disappear as soon as you let go of the frets. This plugin solves that by:<br><br>
+                    1. Detecting note onsets from the input signal<br>
+                    2. Recording a short sample after each onset<br>
+                    3. Looping the sample, crossfading it into itself<br><br>
+                    So far, this all seems similar to what the Gamechanger Plus Pedal does. However, Sostenahto builds upon this, tackling a major flaw in the original 
+                    - pressing the pedal too quickly results in artifacts in the sustained sound. What Sostenahto does instead is add a step:<br><br>
+                    2.5. Extend the recorded sample's length using a <a href="https://ltfat.org/notes/ltfatnote050.pdf">Phase Vocoder</a><br><br>
+                    This results in a less noisy output signal, and also has the effect of creating consistency across each sustained sound, at the cost of poorer performance with trills and vibrato.
+                </p>
+            </section>
+
+            <section class="section" id="main-features" style="background-color: #101010;">
+                <h2 style="color:#FFFFFF">Features</h2>
+                <div class="row">
+                    <div class="col-12 container-fluid">
+                        <img style="margin-inline: -20%;" src="rc/gui_info.png">
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="donate">
+                <h3 style="color:#FFFFFF">Support the Project</h3>
+                <div class="row section-content">
+                    <div class="col-12 container-fluid">
+                        <p>In order to raise compatibility with more platforms and DAWs, the plugin needs to be signed and verified as safe on all platforms. Any donations given will be put towards making this possible.</p>
+                        <button href="https://www.buymeacoffee.com/ahdio/e/126269" style="width: 7em;"><span>Donate</span></button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="section" id="footer" style="background-color: #101010;">
+            <div class="footer row section-content">
+                <div class="container-fluid">
+                    <div class="col-12">
+                        <p>Designed & built by Andre Hui</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../../js/script.js"></script>
+        <script src="js/download.js"></script>
+    </body>
+</html>

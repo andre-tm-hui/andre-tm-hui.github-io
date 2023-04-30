@@ -1,0 +1,239 @@
+button:hover {
+    border-color: #D0B000;
+    color: #D0B000;
+}
+
+a {
+    color: #B09000;
+}
+
+a:hover {
+    color: #D0B000;
+}
+
+#top-download {
+    width: 100%;
+    height: auto;
+    background-image: url("sustenato_bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+label, input {
+    margin-block: 1.5%;
+    margin-inline: auto;
+    text-align: center;
+}
+
+input {
+    outline: 0;
+    border: 1px #606060 solid;
+    border-radius: 5px;
+    padding-inline: 3%;
+    padding-block: 0.5%;
+    transition: all .1s ease-in;
+}
+
+input.form-text:focus {
+    border-color: #909090;
+}
+
+input.form-text {
+    width: 30%;
+    min-height: 32px;
+    min-width: 250px;
+    background-color: #080808;
+    color: #E0E0E0;
+}
+
+input.form-button {
+    width: 10%;
+    padding-inline: 3%;
+    padding-block: 0.5%;
+    transition: all .1s ease-in;
+    color: #B0B0B0;
+    border: 1px solid #303030;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 1em; 
+    width: auto;
+}
+
+input.form-button:hover {
+    border-color: #D0B000;
+    color: #D0B000;
+}
+
+table {
+    width: 100%;
+    margin: 3% 0% 0% 0%;
+}
+
+tr {
+    display: flex;
+    height: 36px;
+    width: 100%;
+    border: 1px #303030 solid;
+    cursor: pointer;
+    transition: all .1s ease-in;
+}
+
+td {
+    margin: auto;
+}
+
+.selected {
+    border-color: #D0B000;
+}
+
+.table-header {
+    border-color: #606060;
+}
+
+.manager-part {
+    transition: all .5s ease-in;
+    opacity: 1;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+#manager {
+    background-image: url("sustenato_bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#login, #manage {
+    margin-block: 5%;
+}
+
+#login-form {
+    margin-block: 2%;
+    margin-inline: auto;
+    align-items: center;
+}
+
+#add-button, #remove-button {
+    height: 26px;
+    width: 34px;
+    padding: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+#add-button {
+    border-bottom-left-radius: 0;
+}
+
+#remove-button {
+    border-bottom-right-radius: 0;
+}
+
+#loading {
+    z-index: 1032;
+}
+
+.loader {
+    position: relative;
+    margin: auto;
+    align-items: center;
+    border: 5px solid #303030;
+    border-radius: 50%;
+    border-top: 5px solid #D0B000;
+    width: 40px;
+    height: 40px;
+    animation: spinner 2s linear infinite;
+} 
+  
+@keyframes spinner {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.modal-container {
+    z-index: 1031;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000B0;
+}
+
+.modal {
+    z-index: 1032;
+    display: flex;
+    width: 30%;
+    height: 20%;
+    min-width: 350px;
+    min-height: 200px;
+    position: relative;
+    margin: auto;
+    align-items: center;
+    background-color: #181818;
+    border-radius: 10px;
+    overflow: visible;
+}
+
+.modal label, .modal input {
+    margin-block: 1%;
+    max-width: 100%;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    color: #D0B000;
+    opacity: 1;
+  }
+  
+  .tooltip .tooltiptext {
+    clip: auto;
+    visibility: hidden;
+    min-width: 200px;
+    max-width: 300px;
+    background-color: #332e00;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1023;
+    transform: translate(0%, -50%) ;
+    top: 12px;
+    left: 22px;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%; /* To the left of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #332e00 transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .hint-text {
+    font-size: 14px;
+  }
+
+  .err-text {
+    color: #700000;
+  }
+
+  .success-text {
+    color: #005000;
+  }
