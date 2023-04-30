@@ -155,6 +155,23 @@ button:hover {
     color: #00D0D0;
 }
 
+.href-button {
+    transition: all 0.3s ease-in-out;
+    margin: auto;
+    width: auto;
+    text-align: center;
+    border: 1px #303030 solid;
+    border-radius: 5px;
+    padding: 6px 20px 8px 20px;
+    background-color: transparent;
+    color: #808080;
+}
+
+.href-button:hover {
+    border-color: #00D0D0;
+    color: #00D0D0;
+}
+
 .section {
     width: 100%;
     padding: 5%;

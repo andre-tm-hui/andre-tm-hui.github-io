@@ -100,6 +100,11 @@ td {
     opacity: 0;
 }
 
+.href-button:hover {
+    border-color: #D0B000;
+    color: #D0B000;
+}
+
 #manager {
     background-image: url("sustenato_bg.png");
     background-position: center;
@@ -237,3 +242,5 @@ td {
   .success-text {
     color: #005000;
   }
+
+  
