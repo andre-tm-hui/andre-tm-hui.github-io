@@ -71,16 +71,16 @@
     color: #C0C0C0;
 }
 
-.item-description a {
+.item-href {
     font-size: 1.2em;
     color: #707070;
 }
 
-.item-description a:hover {
+.item-href a:hover {
     color: #C0C0C0;
 }
 
-.item-description h6 {
+.item-href h6 {
     font-size: 0.7em;
     color: #505050;
 }
